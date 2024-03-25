@@ -136,11 +136,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser('training')
     parser.add_argument('-c', '--checkpoint', type=str, metavar='PATH',
                         help='path to save checkpoint',default="checkpoints")
-    parser.add_argument('--modelpath', type=str, default='checkpoints\\scan01new6284.pth',\
+    parser.add_argument('--modelpath', type=str,\
                         help='Checkpoint path')
-    parser.add_argument('--inferfilepath', type=str, default='C:\\Users\\Administrator\\Desktop\\pointMLP-pytorch-main\\点云文件\\alldatanew900',\
-                        help='Inferfile path')
-    parser.add_argument('--savefile', type=str, default="scan01new-9519-feature.TXT",\
+    parser.add_argument('--inferfilepath', type=str,\
+                        help='TXT inferfile path')
+    parser.add_argument('--savefile', type=str,\
                         help='Savefile path')
     parser.add_argument('--feat_scales', type=list, default=[0,1,2,3], help='Hyperparameters')
     parser.add_argument('--feature_kernels', type=list, default=[32,32,32,32], help='Hyperparameters')

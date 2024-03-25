@@ -280,10 +280,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser('training')
     parser.add_argument('-c', '--checkpoint', type=str, metavar='PATH',
                         help='path to save checkpoint',default="checkpoints")
-    parser.add_argument('--trainfilepath', type=str, default='C:\\Users\Administrator\\Desktop\\pointMLP-pytorch-main\\点云文件\\train',\
-                        help='Trainfile path')
-    parser.add_argument('--testfilepath', type=str, default='C:\\Users\Administrator\\Desktop\\pointMLP-pytorch-main\\点云文件\\test',\
-                        help='Trainfile path')
+    parser.add_argument('--trainfilepath', type=str,\
+                        help='TXT trainfile path')
+    parser.add_argument('--testfilepath', type=str,\
+                        help='TXT testfile path')
     parser.add_argument('--feat_scales', type=list, default=[0,1,2,3], help='Hyperparameters')
     parser.add_argument('--feature_kernels', type=list, default=[32,32,32,32], help='Hyperparameters')
     parser.add_argument('--feature_outchannel', type=list, default=[16,32,64,128], help='Hyperparameters')
